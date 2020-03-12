@@ -27,6 +27,23 @@ module.exports = function check(str, bracketsConfig) {
           return false;
         }
       }
+        
+      /*function check(str, bracketsConfig) {
+
+  for (let i = 0; i < bracketsConfig.length;) {
+    let bracketsChar = bracketsConfig[i].join('');
+
+    if (str.includes(bracketsChar)) {
+      str = str.replace(bracketsChar, '');
+      i = 0;
+    } else {
+      i++;
+    }
+  }
+
+  let checkResult = str.length === 0 ? true : false;
+  return checkResult;
+}*/
     }
   }
 
