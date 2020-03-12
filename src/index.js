@@ -26,9 +26,14 @@ module.exports = function check(str, bracketsConfig) {
         } else {
           return false;
         }
-      }
-        
-      /*function check(str, bracketsConfig) {
+      }        
+   }
+  }
+
+  return newArr.length === 0 ? true : false;
+}
+
+/*function check(str, bracketsConfig) {
 
   for (let i = 0; i < bracketsConfig.length;) {
     let bracketsChar = bracketsConfig[i].join('');
@@ -44,8 +49,3 @@ module.exports = function check(str, bracketsConfig) {
   let checkResult = str.length === 0 ? true : false;
   return checkResult;
 }*/
-    }
-  }
-
-  return newArr.length === 0 ? true : false;
-}
